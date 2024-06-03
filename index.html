@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hjem</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,12 +25,33 @@
     <section id="projects">
       <h2>Prosjekter</h2>
       <div class="project">
-        <h3>Prosjekt 1: Interaktiv nettside i HTML og CSS</h3>
+        <h3 onclick="toggleContent(this)">
+          Prosjekt 1: Interaktiv nettside i HTML og CSS
+        </h3>
         <p>
-          Community-Science-Museum. Et museum for barn og unge. Oppgaven var å
-          lage et interaktivt nettside i HTML og CSS. For å lage en nettside som
-          var mer livlig for unge, brukte jeg SVG og en litt gøyere navmeny.
+          Community-Science-Museum er et museum rettet mot barn og unge.
+          Oppgaven var å lage en interaktiv nettside ved hjelp av HTML og CSS.
+          For å gjøre nettsiden mer livlig og engasjerende for unge brukere,
+          benyttet jeg SVG-grafikk og en mer dynamisk navigasjonsmeny.
         </p>
+
+        <p>
+          Denne prosessen var svært læringsrik med tanke på design, og ga meg
+          frihet til å utforske et mer lekent og fargerikt uttrykk. Jeg valgte å
+          inkludere en bølgete footer for å tilføre nettsiden en følelse av liv
+          og bevegelse.
+        </p>
+
+        <p>
+          Footeren og SVG-elementene fikk svært positive tilbakemeldinger fra
+          målgruppen. For å sikre at nettsiden var brukervennlig, gjennomførte
+          jeg brukertester med barn i aldersgruppen 10-15 år. Tilbakemeldingene
+          var overveldende positive; de fant nettsiden enkel å navigere og likte
+          det lekne designet. Dette prosjektet demonstrerer min evne til å
+          kombinere tekniske ferdigheter med kreativt design for å skape
+          engasjerende digitale opplevelser.
+        </p>
+
         <div class="image-container">
           <img
             src="./media/Screenshot2024-06-03at13-23-32HomeCommunityScienceMuseum.png"
@@ -40,9 +62,14 @@
             alt=""
           />
         </div>
+
+        <a href="https://github.com/EPetrineLynghaug/Community-Science-Museum"
+          >Github Repo</a
+        >
+        <a href="https://museum-science.netlify.app/">Nettsiden</a>
       </div>
       <div class="project">
-        <h3>Prosjekt 2: Wordpress-prosjekt</h3>
+        <h3 onclick="toggleContent(this)">Prosjekt 2: Wordpress-prosjekt</h3>
         <p>
           Vi hadde et samerbeidfag som gjorde at Erland Heen Halvorsen og jeg
           startet en studentbedrift. Vi skulle utvikle et WordPress-prosjekt for
@@ -50,7 +77,7 @@
         </p>
       </div>
       <div class="project">
-        <h3>Prosjekt 3: Eksamen</h3>
+        <h3 onclick="toggleContent(this)">Prosjekt 3: Eksamen</h3>
         <p>
           Til eksamensoppgave skulle vi lage en blogg. Det var et valgfritt tema
           som ble friluftliv. Jeg baserte min oppgave på å lære meg komponent
