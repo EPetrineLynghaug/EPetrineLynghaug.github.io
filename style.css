@@ -1,5 +1,4 @@
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,6 +34,7 @@ section h2 {
     margin-bottom: 1rem;
     color: #9370DB;
 }
+
 .project {
     background: #f4f4f4;
     margin: 1rem 0;
@@ -46,14 +46,19 @@ section h2 {
 
 .image-container {
     display: flex;
+    flex-wrap: wrap; /* Dette gjør at bildene brytes til en ny rad om nødvendig */
     justify-content: space-evenly; 
     align-items: center;
     margin-top: 1rem;
+    gap: 10px; /* Legger til avstand mellom bildene */
 }
 
 .image-container img {
-    width: 30%;
+    width: 100%;
+    max-width: 300px; /* Setter en maks bredde for bildene */
     height: auto;
+    border-radius: 8px; /* Legger til avrundede hjørner på bildene */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
@@ -63,8 +68,9 @@ section h2 {
 }
 
 .project p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem; /* Legger til mer luft mellom avsnittene */
 }
+
 a.link {
     display: inline-block;
     padding: 10px 20px; 
@@ -81,7 +87,6 @@ a.link {
 a.link:hover {
     background-color: #0056b3;
 }
-
 
 ul {
     list-style: none;
@@ -112,12 +117,11 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
 }
-
 
 @media (max-width: 600px) {
     nav ul li {
@@ -127,5 +131,13 @@ footer {
 
     section {
         padding: 1rem;
+    }
+
+    .image-container {
+        flex-direction: column; /* Bildene blir stablet vertikalt på små skjermer */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Bildene tar hele bredden av containeren på små skjermer */
     }
 }
